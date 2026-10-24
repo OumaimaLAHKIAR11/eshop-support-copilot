@@ -123,4 +123,6 @@ websocket-client==1.9.2
 websockets==17.3
 xxhash==4.0.2
 yarl==1.25.1
+sentence-transformers
+langchain-huggingface
 zstandard==0.25.0

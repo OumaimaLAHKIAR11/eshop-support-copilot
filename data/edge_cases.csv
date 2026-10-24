@@ -1,0 +1,3 @@
+ticket_id,coverage,acceptable_documents,expected_behavior
+T112,partial,damaged_products_policy.txt,"Ask for order details; do not promise replacement or refund; request human review if needed"
+T268,partial,return_policy.txt|delivery_policy.txt|refund_policy.txt,"Do not invent a lost-return procedure; request relevant details; require human review"
