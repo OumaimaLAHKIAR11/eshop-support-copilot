@@ -1,0 +1,41 @@
+ticket_id,ticket_text,true_category,pred_category,true_sentiment,pred_sentiment,true_priority,pred_priority
+T033,"I entered the wrong address, but my order NS-4862 has already shipped.",delivery_issue,delivery_issue,negative,neutral,medium,medium
+T038,Your team made returning my watch painless. Thanks a lot.,return_request,return_request,positive,positive,low,low
+T040,Your team made returning my yoga mat painless. Thanks a lot.,return_request,return_request,positive,positive,low,low
+T043,I will be away next week. Can the delivery of order NS-7642 be postponed?,delivery_issue,delivery_issue,neutral,neutral,medium,medium
+T049,Just confirming that my shirt was delivered safely. Great packaging!,delivery_issue,delivery_issue,positive,positive,low,low
+T051,Can you cancel order NS-9780? I just placed it a few minutes ago.,other,other,neutral,neutral,medium,medium
+T063,I have been ordering from you for years and I am still very satisfied,other,other,positive,positive,low,low
+T069,The refund I received is 149.99 euros less than what I paid. Can you explain?,refund_request,refund_request,negative,negative,medium,medium
+T070,The courier marked my parcel as delivered but nothing is at my door or with teh neighbours.,delivery_issue,delivery_issue,negative,negative,high,high
+T072,My shirt gave me an electric shock when I switched it on. This is dangerous.,damaged_product,damaged_product,negative,negative,high,high
+T091,I cancelled order NS-5903 before it shipped. Is the refund automatic?,refund_request,refund_request,neutral,neutral,medium,medium
+T096,Can I change my delivery address? My order NS-2044 has not shipped yet.,delivery_issue,delivery_issue,neutral,neutral,medium,medium
+T099,"The size guide on your website is wrong, I ordered based on it and the water bottle does not fit.",other,other,negative,negative,medium,medium
+T105,Where is my parcel? My order number is NS-2314.,delivery_issue,delivery_issue,neutral,neutral,medium,medium
+T106,"Delivery was quicker than expected, well done.",delivery_issue,delivery_issue,positive,positive,low,low
+T112,One part is missing from my watch package. Can you send it?,damaged_product,damaged_product,neutral,negative,medium,medium
+T120,The kettle has a small defect near the seam. What should I do?,damaged_product,damaged_product,negative,negative,medium,medium
+T125,"The item is broken, but I do not have my order number handy.",damaged_product,damaged_product,negative,negative,medium,medium
+T127,Just confirming that my jacket was delivered safely. Great packaging!,delivery_issue,delivery_issue,positive,positive,low,low
+T146,Great customer care. The scratched hair dryer was replaced without any fuss.,damaged_product,damaged_product,positive,positive,low,low
+T164,What is your refund policy for digital gift cards?,refund_request,refund_request,neutral,neutral,low,low
+T171,"Thank you, your support team was very helpful.",other,other,positive,positive,low,low
+T175,"I received the wrong color, I ordered grey but the product works fine.",other,other,negative,neutral,medium,low
+T176,"my return was rejected even though the coffee maker is unused and within 30 days. this is unfair, please review immediately.",return_request,return_request,negative,negative,high,high
+T196,Can you cancel order NS-3604? I just placed it a few minutes ago.,other,other,neutral,neutral,medium,medium
+T198,Could you add an item to my order NS-5537 before it ships?,other,other,neutral,neutral,medium,medium
+T201,My loyalty points disappeared after my last order.,other,other,negative,negative,medium,medium
+T204,"Thank you, the refund of 34.5 euros arrived on my account today.",refund_request,refund_request,positive,positive,low,low
+T206,The cushion cover arrived cracked and the box was crushed.,damaged_product,damaged_product,negative,negative,high,medium
+T213,"I would like a refund for the backpack I bought 5 days ago, it does not suit me.",refund_request,refund_request,neutral,neutral,medium,medium
+T217,I cancelled order NS-4921 before it shipped. Is the refund automatic?,refund_request,refund_request,neutral,neutral,medium,medium
+T229,Just wanted to say I love my watch. Excellent quality!,other,other,positive,positive,low,low
+T236,I received a gift and would like to return the tent. I do not have the receipt.,return_request,return_request,neutral,neutral,medium,medium
+T244,"Thanks for the partial refund on my damaged kettle, I am happy with the outcome.",damaged_product,damaged_product,positive,positive,low,low
+T248,"Returning my coffee maker is too complicated, your website keeps showing an error on teh return form.",return_request,return_request,negative,negative,medium,medium
+T254,What payment methods do you accept?,other,other,neutral,neutral,low,low
+T259,I received confirmation that my refund was issued yesterday.,refund_request,refund_request,positive,neutral,low,low
+T260,"I need my refund now, I am short on money this month and you have kept 34.5 euros for weeks.",refund_request,refund_request,negative,negative,high,high
+T262,My cushion cover started smoking after a few minutes of use. I unplugged it immediately.,damaged_product,damaged_product,negative,negative,high,high
+T268,I sent back my jacket 10 days ago with your label and the tracking shows it lost. I am worried I will not be refunded.,return_request,return_request,negative,negative,high,high
