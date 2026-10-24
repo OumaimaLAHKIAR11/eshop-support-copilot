@@ -100,9 +100,8 @@ def generate_reply(ticket: str, analysis: dict, context: dict) -> dict:
     # 4. Configure the Azure OpenAI model.
     # The deployment name must match your Azure deployment.
     llm = AzureChatOpenAI(
-        azure_deployment="gpt-5-mini",
-        api_version="2024-12-01-preview",
-        temperature=0,
+    azure_deployment="gpt-5-mini",
+    api_version="2024-12-01-preview",
     )
 
     # 5. Send the prompt to GPT using LangChain.
@@ -128,7 +127,8 @@ def generate_reply(ticket: str, analysis: dict, context: dict) -> dict:
             "needs_human_review": False,
         }
 
-    except Exception:
+    except Exception as exc:
+        print(f"ERREUR GENERATION AZURE: {type(exc).__name__}: {exc}")
         return {
             "suggested_reply": (
                 "Thank you for contacting us. "
