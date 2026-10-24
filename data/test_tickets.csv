@@ -1,0 +1,41 @@
+ticket_id,ticket_text,category,sentiment,priority,expected_summary,expected_document
+T033,"I entered the wrong address, but my order NS-4862 has already shipped.",delivery_issue,negative,medium,Customer requests an address change after dispatch.,delivery_policy.txt
+T038,Your team made returning my watch painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.,return_policy.txt
+T040,Your team made returning my yoga mat painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.,return_policy.txt
+T043,I will be away next week. Can the delivery of order NS-7642 be postponed?,delivery_issue,neutral,medium,Customer asks to postpone delivery.,delivery_policy.txt
+T049,Just confirming that my shirt was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.,delivery_policy.txt
+T051,Can you cancel order NS-9780? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.,
+T063,I have been ordering from you for years and I am still very satisfied,other,positive,low,Loyal customer expresses satisfaction.,
+T069,The refund I received is 149.99 euros less than what I paid. Can you explain?,refund_request,negative,medium,Refund lower than the amount paid.,refund_policy.txt
+T070,The courier marked my parcel as delivered but nothing is at my door or with teh neighbours.,delivery_issue,negative,high,Customer reports a delivery discrepancy.,delivery_policy.txt
+T072,My shirt gave me an electric shock when I switched it on. This is dangerous.,damaged_product,negative,high,Electric shock reported; safety escalation needed.,damaged_products_policy.txt
+T091,I cancelled order NS-5903 before it shipped. Is the refund automatic?,refund_request,neutral,medium,Customer asks about refund after cancellation.,refund_policy.txt
+T096,Can I change my delivery address? My order NS-2044 has not shipped yet.,delivery_issue,neutral,medium,Customer requests an address change before dispatch.,delivery_policy.txt
+T099,"The size guide on your website is wrong, I ordered based on it and the water bottle does not fit.",other,negative,medium,Size guide inaccurate.,
+T105,Where is my parcel? My order number is NS-2314.,delivery_issue,neutral,medium,Customer asks for order status.,delivery_policy.txt
+T106,"Delivery was quicker than expected, well done.",delivery_issue,positive,low,Customer compliments delivery speed.,delivery_policy.txt
+T112,One part is missing from my watch package. Can you send it?,damaged_product,neutral,medium,Missing part in package.,damaged_products_policy.txt
+T120,The kettle has a small defect near the seam. What should I do?,damaged_product,negative,medium,Customer reports a product defect.,damaged_products_policy.txt
+T125,"The item is broken, but I do not have my order number handy.",damaged_product,negative,medium,Damaged item reported; order number missing.,damaged_products_policy.txt
+T127,Just confirming that my jacket was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.,delivery_policy.txt
+T146,Great customer care. The scratched hair dryer was replaced without any fuss.,damaged_product,positive,low,Customer praises handling of a scratched item.,damaged_products_policy.txt
+T164,What is your refund policy for digital gift cards?,refund_request,neutral,low,General refund policy question.,refund_policy.txt
+T171,"Thank you, your support team was very helpful.",other,positive,low,Customer expresses satisfaction.,
+T175,"I received the wrong color, I ordered grey but the product works fine.",other,negative,medium,Customer reports an incorrect item variant.,
+T176,"my return was rejected even though the coffee maker is unused and within 30 days. this is unfair, please review immediately.",return_request,negative,high,Return rejected despite meeting conditions.,return_policy.txt
+T196,Can you cancel order NS-3604? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.,
+T198,Could you add an item to my order NS-5537 before it ships?,other,neutral,medium,Customer wants to modify an order.,
+T201,My loyalty points disappeared after my last order.,other,negative,medium,Loyalty points missing.,
+T204,"Thank you, the refund of 34.5 euros arrived on my account today.",refund_request,positive,low,Customer confirms refund received and thanks the team.,refund_policy.txt
+T206,The cushion cover arrived cracked and the box was crushed.,damaged_product,negative,high,Customer reports a damaged item on arrival.,damaged_products_policy.txt
+T213,"I would like a refund for the backpack I bought 5 days ago, it does not suit me.",refund_request,neutral,medium,Customer requests a refund for a recent purchase.,refund_policy.txt
+T217,I cancelled order NS-4921 before it shipped. Is the refund automatic?,refund_request,neutral,medium,Customer asks about refund after cancellation.,refund_policy.txt
+T229,Just wanted to say I love my watch. Excellent quality!,other,positive,low,Customer praises product quality.,
+T236,I received a gift and would like to return the tent. I do not have the receipt.,return_request,neutral,medium,Return of a gift without receipt.,return_policy.txt
+T244,"Thanks for the partial refund on my damaged kettle, I am happy with the outcome.",damaged_product,positive,low,Customer satisfied with partial refund for damage.,damaged_products_policy.txt
+T248,"Returning my coffee maker is too complicated, your website keeps showing an error on teh return form.",return_request,negative,medium,Return form shows an error.,return_policy.txt
+T254,What payment methods do you accept?,other,neutral,low,Payment methods question.,
+T259,I received confirmation that my refund was issued yesterday.,refund_request,positive,low,Customer reports that a refund was issued.,refund_policy.txt
+T260,"I need my refund now, I am short on money this month and you have kept 34.5 euros for weeks.",refund_request,negative,high,Customer in financial need; refund overdue for weeks.,refund_policy.txt
+T262,My cushion cover started smoking after a few minutes of use. I unplugged it immediately.,damaged_product,negative,high,Potential product safety issue requiring urgent escalation.,damaged_products_policy.txt
+T268,I sent back my jacket 10 days ago with your label and the tracking shows it lost. I am worried I will not be refunded.,return_request,negative,high,Return parcel lost in transit.,return_policy.txt

@@ -1,0 +1,12 @@
+STORE POLICY — RETURNS
+Store name: NovaShop (fictional store)
+Version: 1.0
+
+1. Customers may request a return within 30 calendar days after delivery.
+2. Items must be unused, in their original condition, and include their original packaging where practical.
+3. To start a return, customers should provide their order number and the item they wish to return.
+4. Some products may be excluded from return for hygiene or safety reasons when this is stated on the product page.
+5. Return eligibility must be checked before a refund is promised.
+6. Return shipping instructions are provided after the return request is reviewed.
+7. If an item arrived damaged or defective, use the damaged-products policy rather than treating it as a standard change-of-mind return.
+8. The assistant must not claim that a return request has been created or approved unless the system confirms that action.
