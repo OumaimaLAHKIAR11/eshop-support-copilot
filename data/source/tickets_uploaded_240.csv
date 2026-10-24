@@ -1,0 +1,241 @@
+ticket_id,ticket_text,category,sentiment,priority,expected_summary
+T031,Just wanted to say I love my laptop stand. Excellent quality!,other,positive,low,Customer praises product quality.
+T032,My order NS-7912 was dispatched 3 business days ago and the tracking page has not moved since.,delivery_issue,negative,high,Tracking unchanged for 3 business days.
+T033,"I entered the wrong address, but my order NS-4862 has already shipped.",delivery_issue,negative,medium,Customer requests an address change after dispatch.
+T034,"Thank you for the discount code, it was a nice surprise.",other,positive,low,Customer thanks for a discount code.
+T035,"My desk lamp is not working properly, it turns on and off by itself. Can I get help?",damaged_product,neutral,medium,Customer reports intermittent malfunction.
+T036,Where is my parcel? My order number is NS-4164.,delivery_issue,neutral,medium,Customer asks for order status.
+T037,It is 15 business days past the estimated date for order NS-4483 and support has not answered my last two emails.,delivery_issue,negative,high,Order is 15 business days overdue; prior emails unanswered.
+T038,Your team made returning my watch painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T039,Do you ship to Spain and how much does it cost?,delivery_issue,neutral,low,Customer asks about international shipping.
+T040,Your team made returning my yoga mat painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T041,Tracking shows my package stuck at the sorting centre for over a week. Please escalate this.,delivery_issue,negative,high,Package stuck at sorting centre for over a week.
+T042,can you cancel order ns-6432? i just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.
+T043,I will be away next week. Can the delivery of order NS-7642 be postponed?,delivery_issue,neutral,medium,Customer asks to postpone delivery.
+T044,I need an invoice with my company name for order NS-1793.,other,neutral,medium,Customer requests a company invoice.
+T045,The kettle caught a burning smell and got very hot while charging. I am scared to keep it in the house.,damaged_product,negative,high,Overheating and burning smell; safety concern.
+T046,My order NS-1651 was dispatched 12 business days ago and the tracking page has not moved since.,delivery_issue,negative,high,Tracking unchanged for 12 business days.
+T047,My water bottle gave me an electric shock when I switched it on. This is dangerous.,damaged_product,negative,high,Electric shock reported; safety escalation needed.
+T048,"i appreciate the quick answer about my broken running shoes, the new one arrived undamaged.",damaged_product,positive,low,Customer happy with the resolution of a damaged item.
+T049,Just confirming that my shirt was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.
+T050,Does the warranty cover accidental damage?,damaged_product,neutral,low,Warranty coverage question.
+T051,Can you cancel order NS-9780? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.
+T052,"I would like a refund for the water bottle I bought 10 days ago, it does not suit me.",refund_request,neutral,medium,Customer requests a refund for a recent purchase.
+T053,"The return process was really easy, thank you.",return_request,positive,low,Customer praises easy return process.
+T054,My replacement coffee maker was promised 15 days ago and I have received nothing.,damaged_product,negative,high,Promised replacement not delivered.
+T055,I need to add a floor and a door code to the delivery address of order NS-3161.,delivery_issue,neutral,medium,Customer wants to add address details.
+T056,Just wanted to say I love my water bottle. Excellent quality!,other,positive,low,Customer praises product quality.
+T057,"Thanks for rerouting my package to the pickup point, it worked perfectly",delivery_issue,positive,low,Customer thanks for a successful rerouting.
+T058,I was charged twice for order NS-2503.,other,negative,high,Customer reports a possible duplicate charge.
+T059,"I returned my headphones a month ago and the warehouse confirmed receipt, yet there is still no refund.",refund_request,negative,high,Return confirmed received but refund missing.
+T060,"I need my refund now, I am short on money this month and you have kept 79 euros for weeks",refund_request,negative,high,Customer in financial need; refund overdue for weeks.
+T061,"The refund email says 7 to 10 days, which is too long for a simple return.",refund_request,negative,medium,Customer unhappy with refund processing time.
+T062,"Thanks for the partial refund on my damaged water bottle, I am happy with the outcome.",damaged_product,positive,low,Customer satisfied with partial refund for damage.
+T063,I have been ordering from you for years and I am still very satisfied,other,positive,low,Loyal customer expresses satisfaction.
+T064,How long does a refund usually take after you receive the return?,refund_request,neutral,low,General question about refund duration.
+T065,"Great job on the new packaging, very eco-friendly.",other,positive,low,Customer compliments eco-friendly packaging.
+T066,Just wanted to say I love my yoga mat. Excellent quality!,other,positive,low,Customer praises product quality.
+T067,The courier was very polite and delivered my order NS-7620 right on time.,delivery_issue,positive,low,Customer praises courier and on-time delivery.
+T068,My tracking says out for delivery since this morning. Do you know the approximate time?,delivery_issue,neutral,medium,Customer asks for delivery time estimate.
+T069,The refund I received is 149.99 euros less than what I paid. Can you explain?,refund_request,negative,medium,Refund lower than the amount paid.
+T070,The courier marked my parcel as delivered but nothing is at my door or with teh neighbours.,delivery_issue,negative,high,Customer reports a delivery discrepancy.
+T071,Only one of the two boxes of my order NS-5670 arrived. When will the other come?,delivery_issue,negative,medium,Partial delivery of an order.
+T072,My shirt gave me an electric shock when I switched it on. This is dangerous.,damaged_product,negative,high,Electric shock reported; safety escalation needed.
+T073,The courier was very polite and delivered my order NS-9260 right on time.,delivery_issue,positive,low,Customer praises courier and on-time delivery.
+T074,I never received a return label after three requests and my return deadline is in two days.,return_request,negative,high,Return label not received; deadline in two days.
+T075,You charged me the full price although the promo code was valid at checkout. I want the difference back now.,other,negative,high,Promo discount not applied; overcharge.
+T076,How long is the warranty on the phone case?,damaged_product,neutral,low,Warranty duration question.
+T077,The refund for order NS-4558 is on my card now. Thank you for your help.,refund_request,positive,low,Customer confirms refund received.
+T078,Can you cancel order NS-5082? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.
+T079,"your return policy is unclear. the site says 30 days, the email says 14. which one is correct?",return_request,negative,medium,Conflicting return window information.
+T080,The courier never rang the bell and left a missed delivery card. Now I have to collect it far away.,delivery_issue,negative,medium,Courier skipped delivery attempt.
+T081,My refund was approved 10 business days ago and I still see nothing on my card.,refund_request,negative,high,Approved refund not received after 10 business days.
+T082,Can I get a refund for an item marked final sale?,refund_request,neutral,low,Customer asks about final-sale refund eligibility.
+T083,"My parcel arrived a day early, thank you for the fast delivery.",delivery_issue,positive,low,Customer thanks for an early delivery.
+T084,"Your website logged me out three times while paying, it is really annoying.",other,negative,medium,Repeated logouts during checkout.
+T085,I received an email asking for my card details that looks like it came from your company. Is this real?,other,negative,high,Possible phishing email impersonating the company.
+T086,the courier was very polite and delivered my order ns-5819 right on time.,delivery_issue,positive,low,Customer praises courier and on-time delivery.
+T087,Do you sell spare parts for the laptop stand?,damaged_product,neutral,low,Spare parts availability question.
+T088,"Thank you for sending a replacement blender so quickly, it works great.",damaged_product,positive,low,Customer thanks for a fast replacement.
+T089,There is a payment of 149.99 euros on my card that I never authorised. I think someone used my account.,other,negative,high,Possible unauthorised transaction on customer's account.
+T090,Are shipping fees refundable too?,refund_request,neutral,low,Customer asks about shipping-fee refund eligibility.
+T091,I cancelled order NS-5903 before it shipped. Is the refund automatic?,refund_request,neutral,medium,Customer asks about refund after cancellation.
+T092,My replacement bluetooth speaker was promised 14 days ago and I have received nothing.,damaged_product,negative,high,Promised replacement not delivered.
+T093,I have asked three times for my refund of 19.99 euros and each time I get a generic reply. This is unacceptable.,refund_request,negative,high,"Repeated refund requests of 19.99 euros, no resolution."
+T094,Please delete my account and personal data.,other,neutral,medium,Customer requests account deletion.
+T095,The product I ordered was out of stock and cancelled. When will the money be back?,refund_request,neutral,medium,Refund timing for a cancelled order.
+T096,Can I change my delivery address? My order NS-2044 has not shipped yet.,delivery_issue,neutral,medium,Customer requests an address change before dispatch.
+T097,Your tracking updates were accurate and I received the parcel exactly when you said.,delivery_issue,positive,low,Customer praises tracking accuracy.
+T098,Just confirming that my watch was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.
+T099,"The size guide on your website is wrong, I ordered based on it and the water bottle does not fit.",other,negative,medium,Size guide inaccurate.
+T100,Do you deliver on Saturdays?,delivery_issue,neutral,low,Customer asks about weekend delivery.
+T101,Is return shipping free?,return_request,neutral,low,Customer asks about return shipping costs.
+T102,Just confirming that my keyboard was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.
+T103,Your team made returning my laptop stand painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T104,Do you have a physical store I can visit?,other,neutral,low,Customer asks about physical stores.
+T105,Where is my parcel? My order number is NS-2314.,delivery_issue,neutral,medium,Customer asks for order status.
+T106,"Delivery was quicker than expected, well done.",delivery_issue,positive,low,Customer compliments delivery speed.
+T107,The shirt arrived cracked and the box was crushed.,damaged_product,negative,high,Customer reports a damaged item on arrival.
+T108,"The tent is completely broken, there are glass pieces inside the packaging.",damaged_product,negative,high,Item arrived broken with glass fragments.
+T109,The backpack is exactly as described. I will recommend you to my friends.,other,positive,low,Customer will recommend the company.
+T110,What is your return window for sale items?,return_request,neutral,low,General question on return window.
+T111,The courier was very polite and delivered my order NS-6384 right on time.,delivery_issue,positive,low,Customer praises courier and on-time delivery.
+T112,One part is missing from my watch package. Can you send it?,damaged_product,neutral,medium,Missing part in package.
+T113,Thank you for resolving the billing issue so quickly.,other,positive,low,Customer thanks for billing resolution.
+T114,My bank shows three charges for the same order NS-2902. I need this corrected today,other,negative,high,Multiple charges for a single order.
+T115,My replacement keyboard was promised 9 days ago and I have received nothing.,damaged_product,negative,high,Promised replacement not delivered.
+T116,The tent caught a burning smell and got very hot while charging. I am scared to keep it in the house.,damaged_product,negative,high,Overheating and burning smell; safety concern.
+T117,I returned my water bottle last week and I am annoyed that I have not heard anything about the refund.,refund_request,negative,medium,No refund communication after a return.
+T118,I would like to exchange my yoga mat for a larger size. How does it work?,return_request,neutral,medium,Customer requests an exchange for another size.
+T119,The tent has a small defect near teh seam. What should I do?,damaged_product,negative,medium,Customer reports a product defect.
+T120,The kettle has a small defect near the seam. What should I do?,damaged_product,negative,medium,Customer reports a product defect.
+T121,Just wanted to say I love my phone case. Excellent quality!,other,positive,low,Customer praises product quality.
+T122,One part is missing from my laptop stand package. Can you send it,damaged_product,neutral,medium,Missing part in package.
+T123,Can I return only one item from order NS-6484? I want to keep the rest,return_request,neutral,medium,Customer asks about partial return.
+T124,The return label you sent does not work and the courier refused to take my parcel. The return window ends tomorrow.,return_request,negative,high,Return label invalid and window closing tomorrow.
+T125,"The item is broken, but I do not have my order number handy.",damaged_product,negative,medium,Damaged item reported; order number missing.
+T126,The phone case stopped working after 12 months. Is it still under warranty?,damaged_product,neutral,medium,Warranty query for a failed item.
+T127,Just confirming that my jacket was delivered safely. Great packaging!,delivery_issue,positive,low,Customer confirms safe delivery and praises packaging.
+T128,The jacket stopped working after 4 months. Is it still under warranty?,damaged_product,neutral,medium,Warranty query for a failed item.
+T129,My keyboard was supposed to arrive 2 days ago. Nobody is telling me anything and I need it urgently,delivery_issue,negative,high,Parcel is 2 days late; customer needs it urgently.
+T130,Could you reroute my package to a pickup point? It is currently in transit.,delivery_issue,neutral,medium,Customer requests rerouting to pickup point.
+T131,The return label worked on teh first try. Smooth experience.,return_request,positive,low,Customer satisfied with the return label.
+T132,"The second tent you sent is also damaged. This is the second time, I want a real answer.",damaged_product,negative,high,Replacement also arrived damaged.
+T133,I returned my coffee maker last week and I am annoyed that I have not heard anything about the refund.,refund_request,negative,medium,No refund communication after a return.
+T134,"My toaster fell apart the first day, and now I am out 34.5 euros with no solution.",damaged_product,negative,high,Item failed on first day; customer demands resolution.
+T135,Great customer care. The scratched toaster was replaced without any fuss,damaged_product,positive,low,Customer praises handling of a scratched item.
+T136,Can I return a product bought in the store through your website?,return_request,neutral,low,Customer asks about cross-channel returns.
+T137,"Thanks for accepting my return even without the original box, that was kind.",return_request,positive,low,Customer thanks for flexible return.
+T138,"My yoga mat is not working properly, it turns on and off by itself. Can I get help?",damaged_product,neutral,medium,Customer reports intermittent malfunction.
+T139,The instructions for my keyboard are missing and I cannot assemble it.,damaged_product,neutral,medium,Instructions missing from package.
+T140,How do I start a return,return_request,neutral,low,Customer asks for return instructions.
+T141,Do you offer student discounts?,other,neutral,low,Customer asks about discounts.
+T142,Someone changed the email on my account and I cannot log in. I am afraid of fraud.,other,negative,high,Possible account takeover.
+T143,"I entered the wrong address, but my order NS-3112 has already shipped.",delivery_issue,negative,medium,Customer requests an address change after dispatch.
+T144,How long does standard delivery usually take?,delivery_issue,neutral,low,Customer asks about standard delivery timeframe.
+T145,I was billed 79 euros for a subscription I cancelled two months ago.,other,negative,high,Charge after subscription cancellation.
+T146,Great customer care. The scratched hair dryer was replaced without any fuss.,damaged_product,positive,low,Customer praises handling of a scratched item.
+T147,I am disappointed that I have to pay for the return shipping of a tent that does not fit.,return_request,negative,medium,Customer dislikes paying return shipping.
+T148,I was charged twice for order NS-4817.,other,negative,high,Customer reports a possible duplicate charge.
+T149,"Thanks for refunding the shipping costs as well, very fair.",refund_request,positive,low,Customer thanks for shipping-cost refund.
+T150,The battery of my backpack swelled up and the case is bulging. Please tell me what to do right now.,damaged_product,negative,high,Swollen battery; potential safety hazard.
+T151,Delivery was supposed to be in the morning and the driver came at 8 pm. Not great.,delivery_issue,negative,medium,Delivery time slot not respected.
+T152,My keyboard was supposed to arrive 9 days ago. Nobody is telling me anything and I need it urgently.,delivery_issue,negative,high,Parcel is 9 days late; customer needs it urgently.
+T153,I received a gift and would like to return the running shoes. I do not have the receipt.,return_request,neutral,medium,Return of a gift without receipt.
+T154,My tent started smoking after a few minutes of use. I unplugged it immediately.,damaged_product,negative,high,Potential product safety issue requiring urgent escalation.
+T155,Your team made returning my shirt painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T156,The defective tent was replaced within 10 days. Thanks for your effort.,damaged_product,positive,low,Customer satisfied with replacement speed.
+T157,could you confirm that my refund of 59.9 euros for order ns-3869 has been initiated?,refund_request,neutral,medium,Customer asks for refund confirmation.
+T158,"I returned my desk lamp a month ago and the warehouse confirmed receipt, yet there is still no refund.",refund_request,negative,high,Return confirmed received but refund missing.
+T159,You told me the refund would be processed in 5 days. It has been 12 and my account is still empty.,refund_request,negative,high,Refund overdue versus the promised 5-day window.
+T160,Will the hair dryer be back in stock soon?,other,neutral,low,Restock timing question.
+T161,I was billed 149.99 euros for a subscription I cancelled two months ago.,other,negative,high,Charge after subscription cancellation.
+T162,There is a payment of 59.9 euros on my card that I never authorised. I think someone used my account.,other,negative,high,Possible unauthorised transaction on customer's account.
+T163,i was billed 49 euros for a subscription i cancelled two months ago.,other,negative,high,Charge after subscription cancellation.
+T164,What is your refund policy for digital gift cards?,refund_request,neutral,low,General refund policy question.
+T165,Just wanted to say I love my backpack. Excellent quality!,other,positive,low,Customer praises product quality.
+T166,The courier left a notice but I cannot find where to reschedule. Could you help?,delivery_issue,neutral,medium,Customer needs help rescheduling a delivery.
+T167,The laptop stand has a small defect near teh seam. What should I do?,damaged_product,negative,medium,Customer reports a product defect.
+T168,A button on my kettle stopped working after 7 days.,damaged_product,negative,medium,Component failure after short use.
+T169,Where is my parcel? My order number is NS-4943.,delivery_issue,neutral,medium,Customer asks for order status.
+T170,the jacket is exactly as described. i will recommend you to my friends.,other,positive,low,Customer will recommend the company.
+T171,"Thank you, your support team was very helpful.",other,positive,low,Customer expresses satisfaction.
+T172,The defective backpack was replaced within 4 days. Thanks for your effort.,damaged_product,positive,low,Customer satisfied with replacement speed.
+T173,The agent solved my problem in two minutes. Impressive service.,other,positive,low,Customer praises quick support.
+T174,The zipper on my yoga mat broke after two uses and I am a bit upset.,damaged_product,negative,medium,Zipper defect after minimal use.
+T175,"I received the wrong color, I ordered grey but the product works fine.",other,negative,medium,Customer reports an incorrect item variant.
+T176,"my return was rejected even though the coffee maker is unused and within 30 days. this is unfair, please review immediately.",return_request,negative,high,Return rejected despite meeting conditions.
+T177,It is 9 business days past the estimated date for order NS-2638 and support has not answered my last two emails.,delivery_issue,negative,high,Order is 9 business days overdue; prior emails unanswered.
+T178,just wanted to say i love my shirt. excellent quality!,other,positive,low,Customer praises product quality.
+T179,I have asked three times for my refund of 79 euros and each time I get a generic reply. This is unacceptable.,refund_request,negative,high,"Repeated refund requests of 79 euros, no resolution."
+T180,"I was told my return would be picked up at home, but no one came on teh scheduled day.",return_request,negative,medium,Return pickup missed.
+T181,"I entered the wrong address, but my order NS-1782 has already shipped.",delivery_issue,negative,medium,Customer requests an address change after dispatch.
+T182,"My running shoes is scratched on one side, probably from shipping.",damaged_product,negative,medium,"Scratches on item, likely from transit."
+T183,the courier was very polite and delivered my order ns-6415 right on time.,delivery_issue,positive,low,Customer praises courier and on-time delivery.
+T184,I selected express delivery yesterday. When should it arrive?,delivery_issue,neutral,low,Customer asks about express delivery timing.
+T185,Your team made returning my cushion cover painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T186,"The parcel arrived with the wrong apartment number on the label, luckily a neighbour brought it.",delivery_issue,negative,medium,Label showed wrong apartment number.
+T187,Can I change my delivery address? My order NS-9590 has not shipped yet.,delivery_issue,neutral,medium,Customer requests an address change before dispatch.
+T188,You told me the refund would be processed in 5 days. It has been 10 and my account is still empty.,refund_request,negative,high,Refund overdue versus the promised 5-day window.
+T189,The refund for order NS-6167 is on my card now. Thank you for your help.,refund_request,positive,low,Customer confirms refund received.
+T190,"The second jacket you sent is also damaged. This is the second time, I want a real answer.",damaged_product,negative,high,Replacement also arrived damaged.
+T191,I would like to update the card saved on my subscription.,other,neutral,medium,Customer wants to change payment method.
+T192,"I want to return a product, but I threw away teh packaging.",return_request,neutral,medium,Customer asks about return condition with packaging unavailable.
+T193,"I want to return shoes I bought 10 days ago, they are unused.",return_request,neutral,medium,Customer requests a return within 30 days for an unused item.
+T194,Can you cancel order NS-6488? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.
+T195,I am happy with how smoothly the refund was handled.,refund_request,positive,low,Customer satisfied with refund process.
+T196,Can you cancel order NS-3604? I just placed it a few minutes ago.,other,neutral,medium,Customer asks to cancel a fresh order.
+T197,Can I use two promo codes on the same order?,other,neutral,low,Promo code stacking question.
+T198,Could you add an item to my order NS-5537 before it ships?,other,neutral,medium,Customer wants to modify an order.
+T199,i sent back my blender 8 days ago with your label and the tracking shows it lost. i am worried i will not be refunded.,return_request,negative,high,Return parcel lost in transit.
+T200,My tent has been used once to test it. Is it still returnable?,return_request,neutral,medium,Customer asks about returning a tested item.
+T201,My loyalty points disappeared after my last order.,other,negative,medium,Loyalty points missing.
+T202,"Returning my cushion cover is too complicated, your website keeps showing an error on the return form.",return_request,negative,medium,Return form shows an error.
+T203,Just wanted to say I love my bluetooth speaker. Excellent quality!,other,positive,low,Customer praises product quality.
+T204,"Thank you, the refund of 34.5 euros arrived on my account today.",refund_request,positive,low,Customer confirms refund received and thanks the team.
+T205,"Thank you, the refund of 19.99 euros arrived on my account today.",refund_request,positive,low,Customer confirms refund received and thanks the team.
+T206,The cushion cover arrived cracked and the box was crushed.,damaged_product,negative,high,Customer reports a damaged item on arrival.
+T207,"Thank you for sending a replacement backpack so quickly, it works great.",damaged_product,positive,low,Customer thanks for a fast replacement.
+T208,I have a question about a product before buying it.,other,neutral,low,Customer asks a general pre-purchase question.
+T209,I forgot my password and the reset email never arrives.,other,neutral,medium,Password reset email not received.
+T210,Just wanted to say I love my jacket. Excellent quality!,other,positive,low,Customer praises product quality.
+T211,My refund came through faster than expected. Great service!,refund_request,positive,low,Customer praises quick refund.
+T212,It is 3 business days past the estimated date for order NS-2604 and support has not answered my last two emails.,delivery_issue,negative,high,Order is 3 business days overdue; prior emails unanswered.
+T213,"I would like a refund for the backpack I bought 5 days ago, it does not suit me.",refund_request,neutral,medium,Customer requests a refund for a recent purchase.
+T214,Can I get the refund on my original payment method rather than as store credit?,refund_request,neutral,medium,Customer asks to receive refund to original payment method.
+T215,I keep receiving promotional emails after unsubscribing.,other,negative,medium,Unsubscribe request ignored.
+T216,I am disappointed that I have to pay for the return shipping of a laptop stand that does not fit.,return_request,negative,medium,Customer dislikes paying return shipping.
+T217,I cancelled order NS-4921 before it shipped. Is the refund automatic?,refund_request,neutral,medium,Customer asks about refund after cancellation.
+T218,Your chatbot kept giving me the same irrelevant answers and I could not reach anyone.,other,negative,medium,Chatbot unhelpful; no human reached.
+T219,i sent back my desk lamp 10 days ago with your label and the tracking shows it lost. i am worried i will not be refunded.,return_request,negative,high,Return parcel lost in transit.
+T220,I returned my item last week. When will I get my refund?,refund_request,neutral,medium,Customer asks about refund timing; approval status unknown.
+T221,My order NS-9317 was dispatched 3 business days ago and the tracking page has not moved since.,delivery_issue,negative,high,Tracking unchanged for 3 business days.
+T222,"The parcel was returned to sender without any notice, and I was home all day. Order NS-7216.",delivery_issue,negative,high,Parcel returned to sender unexpectedly.
+T223,I would like to change the email address linked to my account.,other,neutral,medium,Customer wants to update account email.
+T224,The refund for order NS-2185 is on my card now. Thank you for your help.,refund_request,positive,low,Customer confirms refund received.
+T225,"The paint on my tent is chipped on arrival, but it is usable. I would like some kind of compensation.",damaged_product,negative,medium,Cosmetic damage reported; compensation requested.
+T226,"can i speak to a human agent, please?",other,neutral,medium,Customer explicitly requests a human agent.
+T227,Why has my order not arrived? I am really frustrated.,delivery_issue,negative,medium,Customer frustrated about a missing delivery; details absent.
+T228,Please send me a return label for order NS-2667.,return_request,neutral,medium,Customer requests a return label.
+T229,Just wanted to say I love my watch. Excellent quality!,other,positive,low,Customer praises product quality.
+T230,"Thanks to the person who helped me on chat today, she was kind and efficient.",other,positive,low,Customer thanks a chat agent.
+T231,Your team made returning my blender painless. Thanks a lot.,return_request,positive,low,Customer thanks the team for a painless return.
+T232,I received a store credit instead of money back and nobody asked me. I want a refund to my card.,refund_request,negative,medium,Store credit issued instead of requested refund.
+T233,i was charged twice for order ns-3240.,other,negative,high,Customer reports a possible duplicate charge.
+T234,I cancelled order NS-7383 before it shipped. Is the refund automatic,refund_request,neutral,medium,Customer asks about refund after cancellation.
+T235,The exchange for a bigger size arrived quickly and fits perfectly. Thank you!,return_request,positive,low,Customer happy with a successful exchange.
+T236,I received a gift and would like to return the tent. I do not have the receipt.,return_request,neutral,medium,Return of a gift without receipt.
+T237,the refund for order ns-1448 is on my card now. thank you for your help.,refund_request,positive,low,Customer confirms refund received.
+T238,i would like to send back my cushion cover because the screen has a dead pixel.,damaged_product,neutral,medium,Dead pixel reported; customer wants a return.
+T239,the refund for order ns-6614 is on my card now. thank you for your help.,refund_request,positive,low,Customer confirms refund received.
+T240,Is the headphones available in black?,other,neutral,low,Colour availability question.
+T241,"The refund went to a card I closed last year. Please fix this, I am losing my money.",refund_request,negative,high,Refund sent to a closed card.
+T242,"Thank you, the refund of 120 euros arrived on my account today.",refund_request,positive,low,Customer confirms refund received and thanks the team.
+T243,You refunded only part of my order. Where is the rest of my money? Order NS-6198.,refund_request,negative,high,Partial refund issued; remainder missing.
+T244,"Thanks for the partial refund on my damaged kettle, I am happy with the outcome.",damaged_product,positive,low,Customer satisfied with partial refund for damage.
+T245,do refunds go back to the original card automatically?,refund_request,neutral,low,General question about refund method.
+T246,I returned my bluetooth speaker last week and I am annoyed that I have not heard anything about the refund.,refund_request,negative,medium,No refund communication after a return.
+T247,"My yoga mat fell apart the first day, and now I am out 120 euros with no solution",damaged_product,negative,high,Item failed on first day; customer demands resolution.
+T248,"Returning my coffee maker is too complicated, your website keeps showing an error on teh return form.",return_request,negative,medium,Return form shows an error.
+T249,"Your website is easy to use, I found everything I needed quickly.",other,positive,low,Customer praises the website usability.
+T250,Is there a free delivery threshold?,delivery_issue,neutral,low,Customer asks about free delivery conditions.
+T251,The item description said it is waterproof but the manufacturer says it is not. I feel misled.,other,negative,medium,Product description possibly misleading.
+T252,"The laptop stand is completely broken, there are glass pieces inside the packaging.",damaged_product,negative,high,Item arrived broken with glass fragments.
+T253,i paid for express delivery and my laptop stand still has not arrived after 5 days. i want this fixed today.,delivery_issue,negative,high,Express delivery not received after 5 days.
+T254,What payment methods do you accept?,other,neutral,low,Payment methods question.
+T255,The headphones is exactly as described. I will recommend you to my friends.,other,positive,low,Customer will recommend the company.
+T256,You refunded only part of my order. Where is the rest of my money? Order NS-5564.,refund_request,negative,high,Partial refund issued; remainder missing.
+T257,"I appreciate the quick answer about my broken toaster, the new one arrived undamaged.",damaged_product,positive,low,Customer happy with the resolution of a damaged item.
+T258,My refund was approved 6 business days ago and I still see nothing on my card.,refund_request,negative,high,Approved refund not received after 6 business days.
+T259,I received confirmation that my refund was issued yesterday.,refund_request,positive,low,Customer reports that a refund was issued.
+T260,"I need my refund now, I am short on money this month and you have kept 34.5 euros for weeks.",refund_request,negative,high,Customer in financial need; refund overdue for weeks.
+T261,The delivery driver left my package in the rain outside and now it is soaked and the box is open.,delivery_issue,negative,high,Parcel left outside and exposed to rain.
+T262,My cushion cover started smoking after a few minutes of use. I unplugged it immediately.,damaged_product,negative,high,Potential product safety issue requiring urgent escalation.
+T263,I bought this 50 days ago and changed my mind. Can I return it?,return_request,neutral,low,Customer asks about a return after the 30-day window.
+T264,there is a payment of 49 euros on my card that i never authorised. i think someone used my account.,other,negative,high,Possible unauthorised transaction on customer's account.
+T265,"I want to return shoes I bought 14 days ago, they are unused.",return_request,neutral,medium,Customer requests a return within 30 days for an unused item.
+T266,Please send me a return label for order NS-5773.,return_request,neutral,medium,Customer requests a return label.
+T267,My bank shows three charges for the same order NS-2079. I need this corrected today.,other,negative,high,Multiple charges for a single order.
+T268,I sent back my jacket 10 days ago with your label and the tracking shows it lost. I am worried I will not be refunded.,return_request,negative,high,Return parcel lost in transit.
+T269,"My return was rejected even though the bluetooth speaker is unused and within 30 days. This is unfair, please review immediately.",return_request,negative,high,Return rejected despite meeting conditions.
+T270,I paid with a gift card. How will my refund be issued?,refund_request,neutral,medium,Question about refund method for gift card payment.

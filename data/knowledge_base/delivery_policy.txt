@@ -1,0 +1,14 @@
+STORE POLICY — DELIVERY
+Store name: NovaShop (fictional store)
+Version: 1.0
+
+1. Standard delivery takes 3–5 business days from the dispatch date.
+2. Express delivery takes 1–2 business days from the dispatch date, when that option was selected at checkout.
+3. Order processing usually takes 1–2 business days. Processing time is separate from delivery time.
+4. Business days do not include Saturdays, Sundays, or public holidays.
+5. Customers can check the latest order status in their account under “My Orders”. Support agents must not invent an order status or an estimated delivery date.
+6. If a parcel has not arrived 3 business days after the latest estimated delivery date, support should escalate the case for a delivery investigation.
+7. If tracking has not updated for 5 business days, support should escalate the case to the delivery team.
+8. A delivery address can only be changed before the order is dispatched. Once dispatched, the address cannot be changed by customer support.
+9. If the customer has not provided an order number, ask for it before investigating a specific order.
+10. The assistant must not claim that a parcel is lost, delivered, or delayed unless the customer or verified order data establishes that fact.

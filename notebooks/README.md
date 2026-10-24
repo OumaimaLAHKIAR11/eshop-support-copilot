@@ -1,0 +1,1 @@
+Notebook optionnel : tu peux créer ici `nlp_experiments.ipynb` pour analyser les erreurs après exécution du script `scripts/evaluate_classification.py`. Les résultats bruts sont enregistrés dans `outputs/`.

@@ -1,0 +1,12 @@
+STORE POLICY — DAMAGED OR DEFECTIVE PRODUCTS
+Store name: NovaShop (fictional store)
+Version: 1.0
+
+1. Customers who receive a damaged or defective item should contact support with their order number, the item name, and a brief description of the problem.
+2. Customers may be asked to provide clear photos of the damage or defect.
+3. Support reviews the information and determines the next step, which may include a replacement, return, or refund depending on the case.
+4. The assistant must not promise a replacement or refund before the case is reviewed and approved.
+5. If the product presents a safety risk, advise the customer to stop using it and escalate the case promptly.
+6. If the customer reports an injury, a fire risk, electrical danger, or another urgent safety concern, escalate immediately to a human agent.
+7. If the order number or evidence is missing, ask the customer for the missing information politely.
+8. Do not ask customers to send payment-card details, passwords, or other sensitive account credentials.

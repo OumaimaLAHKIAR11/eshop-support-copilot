@@ -1,0 +1,12 @@
+STORE POLICY — REFUNDS
+Store name: NovaShop (fictional store)
+Version: 1.0
+
+1. A customer may request a refund for an eligible returned item after the return is received and inspected.
+2. Once a refund is approved, it is sent to the original payment method.
+3. Banks and payment providers may take 5–10 business days to display an issued refund.
+4. Support must not promise that a refund has been approved or issued unless verified order data confirms it.
+5. If a customer says a refund was approved but it has not appeared after 10 business days, ask for the order number and escalate the case to the billing team.
+6. Shipping fees are not automatically refundable. Eligibility depends on the order circumstances and must be reviewed by support.
+7. Items marked “final sale” are not eligible for a change-of-mind refund, except where applicable law requires otherwise.
+8. If the information provided is insufficient to determine eligibility, explain what is missing and refer the case to a human support agent.
