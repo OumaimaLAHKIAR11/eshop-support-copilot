@@ -1,0 +1,11 @@
+﻿ticket_id,ticket_text,expected_document,required_sources
+S01,Within how many days after delivery can customers request a return?,return_policy.txt,return_policy.txt:1
+S02,Must an item be unused and in its original packaging for a return?,return_policy.txt,return_policy.txt:2
+S03,How many business days does a bank take to display an issued refund?,refund_policy.txt,refund_policy.txt:3
+S04,What payment method receives an approved refund?,refund_policy.txt,refund_policy.txt:2
+S05,How long does standard delivery take from dispatch?,delivery_policy.txt,delivery_policy.txt:1
+S06,Can a delivery address be changed after dispatch?,delivery_policy.txt,delivery_policy.txt:8
+S07,Should photos be provided for a damaged product?,damaged_products_policy.txt,damaged_products_policy.txt:2
+S08,What is the return window? How long do banks take to display an issued refund?,return_policy.txt,return_policy.txt:1|refund_policy.txt:3
+S09,How long does standard delivery take? Are weekends counted as business days?,delivery_policy.txt,delivery_policy.txt:1|delivery_policy.txt:4
+S10,What is the capital of Japan?,,

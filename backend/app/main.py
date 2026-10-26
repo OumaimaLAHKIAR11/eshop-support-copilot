@@ -15,9 +15,3 @@ app = FastAPI(
 )
 
 app.include_router(router)
-
-
-@app.get("/health", tags=["Health"])
-def health_check():
-    """Check whether the API is running."""
-    return {"status": "ok"}

@@ -21,3 +21,9 @@ outputs_classification_temp.csv
 
 # Fichiers temporaires Jupyter
 .ipynb_checkpoints/
+
+# Local pytest temporary fixtures
+.test-tmp*/
+
+# Local support requests contain customer information
+runtime/

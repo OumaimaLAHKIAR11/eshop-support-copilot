@@ -1,0 +1,151 @@
+{
+  "tickets": 10,
+  "k": 3,
+  "document_accuracy": 1.0,
+  "section_annotated_tickets": 9,
+  "mean_section_recall": 1.0,
+  "full_coverage_rate": 1.0,
+  "results": [
+    {
+      "ticket_id": "S01",
+      "document_hit": true,
+      "required_sources": [
+        "return_policy.txt:1"
+      ],
+      "retrieved_sources": [
+        "delivery_policy.txt:1",
+        "delivery_policy.txt:6",
+        "return_policy.txt:1"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S02",
+      "document_hit": true,
+      "required_sources": [
+        "return_policy.txt:2"
+      ],
+      "retrieved_sources": [
+        "return_policy.txt:2",
+        "return_policy.txt:4",
+        "return_policy.txt:7"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S03",
+      "document_hit": true,
+      "required_sources": [
+        "refund_policy.txt:3"
+      ],
+      "retrieved_sources": [
+        "refund_policy.txt:3",
+        "refund_policy.txt:5",
+        "return_policy.txt:1"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S04",
+      "document_hit": true,
+      "required_sources": [
+        "refund_policy.txt:2"
+      ],
+      "retrieved_sources": [
+        "refund_policy.txt:2",
+        "refund_policy.txt:4",
+        "refund_policy.txt:5"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S05",
+      "document_hit": true,
+      "required_sources": [
+        "delivery_policy.txt:1"
+      ],
+      "retrieved_sources": [
+        "delivery_policy.txt:1",
+        "delivery_policy.txt:2",
+        "delivery_policy.txt:3"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S06",
+      "document_hit": true,
+      "required_sources": [
+        "delivery_policy.txt:8"
+      ],
+      "retrieved_sources": [
+        "delivery_policy.txt:1",
+        "delivery_policy.txt:2",
+        "delivery_policy.txt:8"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S07",
+      "document_hit": true,
+      "required_sources": [
+        "damaged_products_policy.txt:2"
+      ],
+      "retrieved_sources": [
+        "damaged_products_policy.txt:2",
+        "damaged_products_policy.txt:3",
+        "damaged_products_policy.txt:5"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S08",
+      "document_hit": true,
+      "required_sources": [
+        "refund_policy.txt:3",
+        "return_policy.txt:1"
+      ],
+      "retrieved_sources": [
+        "refund_policy.txt:1",
+        "refund_policy.txt:3",
+        "refund_policy.txt:5",
+        "return_policy.txt:1",
+        "return_policy.txt:3",
+        "return_policy.txt:5"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S09",
+      "document_hit": true,
+      "required_sources": [
+        "delivery_policy.txt:1",
+        "delivery_policy.txt:4"
+      ],
+      "retrieved_sources": [
+        "delivery_policy.txt:1",
+        "delivery_policy.txt:2",
+        "delivery_policy.txt:3",
+        "delivery_policy.txt:4"
+      ],
+      "section_recall": 1.0,
+      "all_required_sections_found": true
+    },
+    {
+      "ticket_id": "S10",
+      "document_hit": true,
+      "required_sources": [],
+      "retrieved_sources": [],
+      "section_recall": null,
+      "all_required_sections_found": null
+    }
+  ],
+  "mode": "multi-question (up to 8 passages)"
+}

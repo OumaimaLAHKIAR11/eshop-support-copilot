@@ -3,9 +3,7 @@
 Run from the repository root:  streamlit run frontend/app.py
 Set DEMO_MODE=true to preview the UI with simulated replies (no backend needed).
 
-Limitation: POST /api/v1/process-ticket handles ONE message per request and has no
-conversation ID or history field, so the assistant has no memory of earlier turns.
-History shown here is only a per-browser-session display convenience.
+The last ten turns of the current chat are sent as context with each request.
 """
 
 import logging
@@ -21,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from frontend.reply_format import customer_reply_text
 from frontend.api_client import process_ticket  # noqa: E402
 from frontend.demo import simulate_ticket  # noqa: E402
 
@@ -35,20 +34,13 @@ SUGGESTIONS = [
     ("How can I return a product?", ":material/assignment_return:"),
 ]
 
-BRAND_HTML = """
-<div class="brand">
-  <span class="brand-mark">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M6 7h12l-1 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/>
-    </svg>
-  </span>
-  <span><span class="brand-name">ShopAssist</span><br><span class="brand-sub">E-Shop Customer Support</span></span>
-</div>
-"""
+BRAND_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" role="img" aria-label="ShopAssist">
+<rect x="0" y="4" width="40" height="40" rx="12" fill="#0e7664"/>
+<g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 21h20l-1.6 17H11.6L10 21Z"/><path d="M15 22v-4a5 5 0 0 1 10 0v4"/>
+</g><text x="54" y="32" fill="#17212b" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="650" letter-spacing="-.7">ShopAssist</text></svg>"""
 
 TYPING_HTML = '<div class="typing" role="status" aria-label="Assistant is typing"><span></span><span></span><span></span></div>'
-NOTICE_HTML = '<div class="notice">This request may need a member of our support team to review it.</div>'
 
 ERRORS = {
     "unavailable": ("We couldn't reach the assistant.", "The service isn't responding right now. Please try again in a moment."),
@@ -103,13 +95,14 @@ def shorten(text: str, n: int = 38) -> str:
 
 
 # ---------- backend ----------
-def get_reply(message: str) -> dict:
+def get_reply(message: str, history: list | None = None) -> dict:
     ss = st.session_state
     ss.ticket_counter += 1
     ticket_id = f"CHAT-{ss.session_id}-{ss.ticket_counter:03d}"
     if demo_mode():
         return simulate_ticket(ticket_id, message)
-    return process_ticket(ticket_id=ticket_id, message=message)
+    return process_ticket(ticket_id=ticket_id, message=message,
+                          language=ss.get("reply_language", "en"), history=history)
 
 
 def answer(chat: dict, prompt: str) -> None:
@@ -118,7 +111,9 @@ def answer(chat: dict, prompt: str) -> None:
         slot = st.empty()
         slot.markdown(TYPING_HTML, unsafe_allow_html=True)
         try:
-            result = get_reply(prompt)
+            history = [{"role": m["role"], "content": m["content"][:6000]}
+                       for m in chat["messages"][:-1][-10:]]
+            result = get_reply(prompt, history)
             reply = str(result.get("suggested_reply") or "").strip()
             if not reply:
                 raise ValueError("empty reply")
@@ -126,6 +121,7 @@ def answer(chat: dict, prompt: str) -> None:
                 "role": "assistant",
                 "content": reply,
                 "needs_review": bool(result.get("needs_human_review", False)),
+                "sources": result.get("sources", []),
                 "demo": demo_mode(),
             })
             chat["error"] = None
@@ -148,34 +144,31 @@ def answer(chat: dict, prompt: str) -> None:
 def render_sidebar() -> None:
     ss = st.session_state
     with st.sidebar:
-        st.markdown(BRAND_HTML, unsafe_allow_html=True)
-        st.button("New chat", icon=":material/add:", type="primary", key="new_chat", on_click=new_chat)
+        st.button("New conversation", icon=":material/edit_square:", type="primary", key="new_chat", on_click=new_chat, use_container_width=True)
 
         chats = [(cid, c) for cid, c in ss.chats.items() if c["messages"]]
+        st.markdown('<div class="side-label">Conversations</div>', unsafe_allow_html=True)
         if chats:
-            st.markdown('<div class="side-label">Recent</div>', unsafe_allow_html=True)
             with st.container(key="chatlist"):
                 for cid, c in reversed(chats):
                     is_current = cid == ss.current_id
                     st.button(
                         c["title"],
                         key=f"{'chatcur' if is_current else 'chat'}_{cid}",
-                        on_click=open_chat, args=(cid,), type="tertiary",
+                        on_click=open_chat, args=(cid,), type="tertiary", icon=":material/chat_bubble_outline:",
+                        use_container_width=True,
                     )
 
-        st.markdown('<div class="side-spacer"></div>', unsafe_allow_html=True)
-        if demo_mode():
-            st.markdown('<span class="pill pill-demo">Demo mode</span><div class="side-note">.</div>', unsafe_allow_html=True)
         else:
-            state = {None: ("idle", "Live mode"), True: ("ok", "Assistant reachable"), False: ("down", "Assistant unreachable")}[ss.backend_ok]
-            st.markdown(f'<span class="pill pill-{state[0]}"><i></i>{state[1]}</span>', unsafe_allow_html=True)
+            st.markdown('<p class="side-empty">Your conversations will appear here.</p>', unsafe_allow_html=True)
 
 
 def render_welcome() -> None:
     st.markdown(
         """<div class="welcome">
-        <h1>How can we help you today?</h1>
-        <p>Ask anything about your delivery, returns, or refunds.</p></div>""",
+        <span class="welcome-label">CUSTOMER SUPPORT</span>
+        <h1>How can we help?</h1>
+        <p>Get help with a delivery, a return, or a refund.</p></div>""",
         unsafe_allow_html=True,
     )
     with st.container(key="suggestions"):
@@ -191,10 +184,8 @@ def render_message(msg: dict, index: int) -> None:
     avatar = USER_AVATAR if role == "user" else ASSISTANT_AVATAR
     with st.container(key=f"msg_{role}_{index}"):
         with st.chat_message(role, avatar=avatar):
-            st.markdown(msg["content"])
+            st.markdown(customer_reply_text(msg["content"], msg.get("sources", [])))
             if role == "assistant":
-                if msg.get("needs_review"):
-                    st.markdown(NOTICE_HTML, unsafe_allow_html=True)
                 if msg.get("demo"):
                     st.caption("demo mode")
 
@@ -207,10 +198,11 @@ def render_error(kind: str) -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="ShopAssist", page_icon=":material/storefront:", layout="centered", initial_sidebar_state="auto")
+    st.set_page_config(page_title="ShopAssist", page_icon=":material/storefront:", layout="centered", initial_sidebar_state="expanded")
     init_state()
+    st.logo(BRAND_SVG, size="large", icon_image=BRAND_SVG)
 
-    helper = ("Demo mode: replies are simulated. " if demo_mode() else "") + "ShopAssist specializes in e-commerce support: delivery, returns and refunds."
+    helper = ("Demo mode: replies are simulated. " if demo_mode() else "") + "Help with deliveries, returns and refunds."
     css = CSS_PATH.read_text(encoding="utf-8")  # @import doit rester en tête de sa feuille : blocs <style> séparés
     st.markdown(f"<style>\n{css}\n</style>\n<style>:root{{--helper-text:\"{helper}\";}}</style>", unsafe_allow_html=True)
 

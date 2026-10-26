@@ -8,8 +8,8 @@ API_BASE_URL = os.getenv(
 ).rstrip("/")
 
 
-def process_ticket(ticket_id: str, message: str, language: str = "en") -> dict:
-    """POST /api/v1/process-ticket (contract unchanged).
+def process_ticket(ticket_id: str, message: str, language: str = "en", history: list | None = None) -> dict:
+    """POST /api/v1/process-ticket with optional bounded conversation history.
 
     Raises requests.RequestException on network/HTTP errors and ValueError
     if the body is not a JSON object.
@@ -20,8 +20,9 @@ def process_ticket(ticket_id: str, message: str, language: str = "en") -> dict:
             "ticket_id": ticket_id,
             "message": message,
             "language": language,
+            "history": history or [],
         },
-        timeout=90,
+        timeout=150,
     )
     response.raise_for_status()
     data = response.json()

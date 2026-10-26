@@ -34,5 +34,5 @@ def test_empty_or_invalid_ticket_raises_value_error(bad_text):
 ])
 def test_live_classification_returns_valid_labels(text):
     result = analyze_ticket(text)
-    assert set(result) == {"category", "sentiment", "priority"}
+    assert set(result) == {"category", "sentiment", "priority", "intent"}
     TicketAnalysis.model_validate(result)

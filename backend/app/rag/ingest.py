@@ -3,6 +3,11 @@
 
 import os
 import re
+import hashlib
+import json
+import uuid
+from functools import lru_cache
+from filelock import FileLock
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -20,6 +25,7 @@ COLLECTION = "eshop_support"
 RULE_RE = re.compile(r"^\s*(\d+)\.\s+(.*)")
 
 
+@lru_cache(maxsize=1)
 def get_embeddings() -> HuggingFaceEmbeddings:
     return HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
@@ -113,36 +119,57 @@ def build_chunks(group_size: int = 1) -> list[Document]:
     return documents
 
 
-def build_index(
-    group_size: int = 1,
-    persist_dir: str = CHROMA_DIR,
-) -> int:
-    """Reconstruit la collection Chroma sans conserver les anciens chunks."""
+def knowledge_fingerprint() -> str:
+    paths = sorted(KB_DIR.glob("*.txt"))
+    if not paths:
+        raise ValueError("No knowledge-base policy files found")
+    digest = hashlib.sha256()
+    for path in paths:
+        digest.update(path.name.encode())
+        digest.update(path.read_bytes())
+    return digest.hexdigest()
+
+
+def _publish_index(group_size: int, persist_dir: str) -> int:
+    fingerprint = knowledge_fingerprint()
     docs = build_chunks(group_size)
-    embeddings = get_embeddings()
-
-    # Supprimer l'ancienne collection si elle existe.
-    existing = Chroma(
-        collection_name=COLLECTION,
-        embedding_function=embeddings,
-        persist_directory=persist_dir,
+    # Readers continue using the previous immutable collection during construction.
+    name = COLLECTION + "_" + uuid.uuid4().hex
+    store = Chroma.from_documents(
+        documents=docs, embedding=get_embeddings(), collection_name=name,
+        persist_directory=persist_dir, collection_metadata={"hnsw:space": "cosine"},
     )
-
-    try:
-        existing.delete_collection()
-    except Exception:
-        # Une collection inexistante peut être normale au premier lancement.
-        pass
-
-    Chroma.from_documents(
-        documents=docs,
-        embedding=embeddings,
-        collection_name=COLLECTION,
-        persist_directory=persist_dir,
-        collection_metadata={"hnsw:space": "cosine"},
-    )
-
+    if store._collection.count() != len(docs):
+        raise RuntimeError("Incomplete index; previous collection remains active")
+    if fingerprint != knowledge_fingerprint():
+        raise RuntimeError("Policies changed during indexing; retry the build")
+    directory = Path(persist_dir)
+    manifest = {"collection": name, "fingerprint": fingerprint, "group_size": group_size,
+                "chunks": len(docs)}
+    temporary = directory / ("active-" + uuid.uuid4().hex + ".tmp")
+    temporary.write_text(json.dumps(manifest), encoding="utf-8")
+    os.replace(temporary, directory / "active.json")
     return len(docs)
+
+
+def build_index(group_size: int = 1, persist_dir: str = CHROMA_DIR) -> int:
+    """Build a new collection and atomically publish it only after validation."""
+    Path(persist_dir).mkdir(parents=True, exist_ok=True)
+    with FileLock(str(Path(persist_dir) / "index.lock"), timeout=120):
+        return _publish_index(group_size, persist_dir)
+
+
+def active_collection(persist_dir: str = CHROMA_DIR) -> str:
+    """Refresh changed policies under a process-safe lock; never use stale evidence."""
+    directory = Path(persist_dir)
+    directory.mkdir(parents=True, exist_ok=True)
+    with FileLock(str(directory / "index.lock"), timeout=120):
+        manifest_path = directory / "active.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
+        if manifest.get("fingerprint") != knowledge_fingerprint():
+            _publish_index(manifest.get("group_size", 1), persist_dir)
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        return manifest["collection"]
 
 
 if __name__ == "__main__":
